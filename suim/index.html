@@ -6,6 +6,8 @@
 </head>
 <body>
 <style>
+.server{
+width:100%;}
 body{
 background: #000;
 color: #fff;
@@ -13,10 +15,55 @@ font-size: 20px;
 text-align: center;
 font-family: Arial;
 font-weight: 600;
+display: none;
 }
+
+@media(max-width: 999px){
+body{
+display: inline;
+}
+}
+
+img{
+width: 100%;
+}
+
+a{
+text-decoration: none;
+color: #fff;
+}
+button{
+padding: 8px 50px;
+border-radius: 20px;
+background: green;
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+font-family: Arial;
+border: none;
+}
+
+.dow{
+position:fixed;
+top: 15%;
+left:0;
+right:0;
+}
+
+h3{
+opacity: 0.6;
+}
+
+
 </style>
 <div class="server">
-<h3>Hello user!</h3>
+<img src="./09-01.png" title="hello"/>
+</div>
+<div class="dow">
+<a href="" download="hef.apk">
+<button>Install APK</button>
+<h3>Money APK Free!</h3>
+</a>
 </div>
 </body>
 </html>
