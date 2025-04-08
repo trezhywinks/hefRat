@@ -14,7 +14,8 @@ const host = "127.0.0.1";
 app.get(('/server'), (req, res)  => {
 const userIp = req.headers['x-forwarded-for'] || req.ip;
 console.log('[!] UserIP => ', userIp);
-http.get(`http://ipinfo.io/${userIp}/geo`, (resp) => {
+//http.get(`http://ipinfo.io/${userIp}/geo`, (resp) => {
+http.get(`http://ip-api.com/json/${userIp}`, (resp) => {
 let data = '';
 
 resp.on('data', (chunk) => {
